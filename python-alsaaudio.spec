@@ -6,7 +6,7 @@ Name:		python-%{module}
 Version:	0.4
 Release:	0.1
 License:	PSF
-Group:		Development/Languages/Python
+Group:		Libraries/Python
 Source0:	http://dl.sourceforge.net/%{_name}/%{_name}-%{version}.tar.gz
 # Source0-md5:	b312c28efba7db0494836a79f0a49898
 URL:		http://sourceforge.net/projects/pyalsaaudio/
