@@ -1,20 +1,19 @@
 %define 	module	alsaaudio
 %define		_name	pyalsaaudio
-Summary:	wrappers for accessing the ALSA API from Python
-Summary(pl.UTF-8):	interfejs dający dostęp do ALSA API z poziomu Pythona
+Summary:	Wrappers for accessing the ALSA API from Python
+Summary(pl.UTF-8):	Interfejs dający dostęp do ALSA API z poziomu Pythona
 Name:		python-%{module}
 Version:	0.4
 Release:	0.1
 License:	PSF
 Group:		Libraries/Python
-Source0:	http://dl.sourceforge.net/%{_name}/%{_name}-%{version}.tar.gz
+Source0:	http://dl.sourceforge.net/pyalsaaudio/%{_name}-%{version}.tar.gz
 # Source0-md5:	b312c28efba7db0494836a79f0a49898
 URL:		http://sourceforge.net/projects/pyalsaaudio/
 BuildRequires:	alsa-lib-devel
 BuildRequires:	python-devel
 BuildRequires:	rpm-pythonprov
 BuildRequires:	rpmbuild(macros) >= 1.219
-Requires:	alsa-lib
 Requires:	python-modules
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -46,7 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc CHANGES README TODO
-%attr(755,root,root) %{py_libdir}/site-packages/alsaaudio.so
+%attr(755,root,root) %{py_sitedir}/alsaaudio.so
 %if "%{pld_release}" != "ac"
-%{py_libdir}/site-packages/%{_name}-*.egg-info
+%{py_sitedir}/%{_name}-*.egg-info
 %endif
