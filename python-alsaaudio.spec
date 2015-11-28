@@ -4,7 +4,7 @@ Summary:	Wrappers for accessing the ALSA API from Python
 Summary(pl.UTF-8):	Interfejs dający dostęp do ALSA API z poziomu Pythona
 Name:		python-%{module}
 Version:	0.7
-Release:	1
+Release:	2
 License:	PSF
 Group:		Libraries/Python
 Source0:	http://downloads.sourceforge.net/pyalsaaudio/%{_name}-%{version}.tar.gz
